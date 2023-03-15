@@ -1,0 +1,78 @@
+.selected-images-container {
+  background-color: #ffffffcb;
+  max-width: 420px;
+  padding: 1rem;
+  border-radius: 2.5rem;
+}
+
+.selected-image {
+  padding: 1.2rem;
+  display: block;
+  width: 400px;
+  height: 300px;
+
+  border: 1px solid transparent;
+  transition: var(--transition);
+  border-radius: 2.5rem;
+  overflow: hidden;
+}
+
+.heart-icon {
+  font-size: 24px;
+  color: red;
+  margin-right: 10px;
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.image-info-selected {
+  margin-left: 1.5rem;
+}
+.label {
+  flex-basis: 30%;
+  font-weight: normal;
+}
+
+.value {
+  flex-basis: 60%;
+
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.btn-delete:hover {
+  background: green;
+  color: blue;
+  border-color: transparent;
+}
+
+.btn-delete {
+  width: max-content;
+  display: inline-block;
+  color: purple;
+  padding: 0.75rem 1.2rem;
+  margin-right: 2rem;
+  border-radius: 0.4rem;
+  cursor: pointer;
+  border: 1px solid black;
+  transition: var(--transition);
+}
+
+/*==================MEDI QUERIES (MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 750px) {
+  .selected-images-container {
+    display: 25%;
+  }
+
+  .selected-image {
+    padding: 1.2rem;
+    display: block;
+    width: 200px;
+    height: 150px;
+
+    border: 1px solid transparent;
+    transition: var(--transition);
+    border-radius: 2.5rem;
+    overflow: hidden;
+  }
+}

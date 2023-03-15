@@ -1,0 +1,68 @@
+.images-container {
+  padding-left: 1rem;
+  background-color: rgb(214, 214, 214);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn-favorited {
+  -webkit-text-fill-color: #12343b;
+  background-color: #fff;
+  padding-right: 50px;
+  margin-right: 50px;
+}
+
+.image-info {
+  margin-left: 1.5rem;
+}
+
+.sel-image {
+  display: block;
+  width: 275px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 2.5rem;
+  border: #12343b 3px solid;
+}
+
+.image {
+  padding: 1.5rem;
+  display: block;
+  width: 275px;
+  height: 200px;
+  cursor: pointer;
+  border-radius: 2.5rem;
+}
+
+.image::selection {
+  border-radius: #12343b 2px;
+}
+
+/* overflow: hidden; */
+
+/*==================MEDI QUERIES (MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 750px) {
+  .images-container {
+    grid-template-columns: repeat(1, 1fr);
+    display: 65%;
+    margin-left: 5rem;
+    padding-top: 7rem;
+  }
+
+  .images-container > h4 {
+    display: 30%;
+  }
+
+  .image {
+    padding: 0.5rem;
+    display: block;
+    width: 140px;
+    height: 100px;
+    cursor: pointer;
+    border-radius: 1.25rem;
+  }
+
+  section {
+    margin-top: 6rem;
+  }
+}

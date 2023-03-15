@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+
+:root {
+  background-color: rgb(214, 214, 214);
+}
+
+:root {
+  --color-bg: #12343b; /* en koyu*/
+  --color-bg-variant: #2d545e; /* daha az koyu*/
+  --color-primary: #e1b382; /* acik*/
+  --color-primary-variant: #c89666; /* aciktan koyu*/
+  --color-white: #fff; /* elleme*/
+  --color-light: rgba(255, 255, 255, 0.6); /* elleme*/
+
+  --transition: all 400ms ease;
+
+  --container-width-lg: 75%;
+  --container-width-md: 86%;
+  --container-width-sm: 90%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ::-webkit-scrollbar {
+  display: none;
+} */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: var(--color-white);
+  color: black;
+  line-height: 1.7;
+}
+
+/* =================General Styles==============*/
+
+.app-container {
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  justify-content: center;
+  background-color: rgb(214, 214, 214);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 500%;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+section {
+  margin-top: 0rem;
+}
+
+section > h2,
+section > h5 {
+  text-align: center;
+  color: black;
+}
+
+section > h2 {
+  color: black;
+  margin-bottom: 3rem;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*==================MEDI QUERIES (MEDIUM DEVICES) ===============*/
+@media screen and (max-width: 1024px) {
+  .app-container {
+    width: var(--container-width-md);
+  }
+}
+
+/*==================MEDI QUERIES (SMALL DEVICES) ===============*/
+@media screen and (max-width: 600px) {
+  .app-container {
+    width: var(--container-width-sm);
+  }
+
+  section > h2 {
+    margin-bottom: 2rem;
+  }
+}
