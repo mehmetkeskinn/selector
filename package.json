@@ -1,7 +1,7 @@
 {
   "name": "typedeneme",
   "version": "0.1.0",
-  "homepage": "https://mehmetkeskinn.github.io/imageselector/",
+  "homepage": "https://mehmetkeskinn.github.io/selector/",
   "private": true,
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
